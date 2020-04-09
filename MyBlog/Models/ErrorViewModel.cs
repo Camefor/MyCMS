@@ -1,6 +1,6 @@
 using System;
 
-namespace MyBlog.Models {
+namespace MyBlog {
     public class ErrorViewModel {
         public string RequestId { get; set; }
 

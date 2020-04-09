@@ -13,6 +13,13 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Camefor.IServices\Camefor.IServices.csproj" />
+    <ProjectReference Include="..\Camefor.Model\Camefor.Model.csproj" />
+    <ProjectReference Include="..\Camefor.Repository\Camefor.Repository.csproj" />
+    <ProjectReference Include="..\Camefor.Services\Camefor.Services.csproj" />
+  </ItemGroup>
+
 
 
 </Project>

@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Camefor</name>
+    </assembly>
+    <members>
+        <member name="T:Camefor.Jwt.Appsettings">
+            <summary>
+            appsettings.json操作类
+            </summary>
+        </member>
+        <member name="M:Camefor.Jwt.Appsettings.app(System.String[])">
+            <summary>
+            封装要操作的字符
+            </summary>
+            <param name="sections"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Camefor.Jwt.JwtHelper.IssueJWT(Camefor.Jwt.TokenModelJWT)">
+            <summary>
+            颁发JWT字符串
+            </summary>
+            <param name="tokenModel"></param>
+            <returns>token</returns>
+        </member>
+        <member name="M:Camefor.Jwt.JwtHelper.SerializeJWT(System.String)">
+            <summary>
+            解析
+            </summary>
+            <param name="jwtStr"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Camefor.Jwt.TokenModelJWT">
+            <summary>
+            令牌
+            </summary>
+        </member>
+        <member name="P:Camefor.Jwt.TokenModelJWT.Uid">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Camefor.Jwt.TokenModelJWT.Role">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:Camefor.Jwt.TokenModelJWT.Work">
+            <summary>
+            职能
+            </summary>
+        </member>
+        <member name="T:Camefor.Jwt.JwtTokenAuthMiddle">
+            <summary>
+            自定义授权认证中间件
+            </summary>
+        </member>
+        <member name="M:Camefor.Controllers.BlogController.Get(System.Int32)">
+            <summary>
+            根据id获取数据
+            </summary>
+            <param name="id">参数id</param>
+            <returns></returns>
+        </member>
+        <member name="T:Camefor.Controllers.OnAuthController">
+            <summary>
+            登录 认证 授权
+            </summary>
+        </member>
+        <member name="M:Camefor.Controllers.OnAuthController.#ctor(Microsoft.Extensions.Logging.ILogger{Camefor.Controllers.OnAuthController})">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="F:Camefor.ApiVersions.v1">
+            <summary>
+            v1 版本
+            </summary>
+        </member>
+        <member name="F:Camefor.ApiVersions.v2">
+            <summary>
+            v2 版本
+            </summary>
+        </member>
+        <member name="T:Camefor.StartupOnlyAutoFac">
+            <summary>
+            AutoFac接管注册
+            </summary>
+        </member>
+        <member name="T:Camefor.StartupWithAutoFac">
+            <summary>
+            AutoFac作为辅助注册#
+            这里其他地方与原startup都相同，
+            只是多了一个ConfigureContainer()方法，
+            在该方法内可以按照AutoFac的语法进行自由注册
+            </summary>
+        </member>
+        <member name="M:Camefor.StartupWithAutoFac.ConfigureContainer(Autofac.ContainerBuilder)">
+            <summary>
+            利用该方法可以使用AutoFac辅助注册，该方法在ConfigureServices()之后执行，所以当发生覆盖注册时，以后者为准。
+            不要再利用构建器去创建AutoFac容器了，系统已经接管了。
+            </summary>
+            <param name="builder"></param>
+        </member>
+    </members>
+</doc>

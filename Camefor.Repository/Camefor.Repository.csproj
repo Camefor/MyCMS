@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Description.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Description.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MiniProfiler.AspNetCore.Mvc" Version="4.1.0" />
+    <PackageReference Include="sqlSugarCore" Version="5.0.0.11" />
+    <PackageReference Include="StackExchange.Exceptional.Shared" Version="2.1.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.0.601" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Camefor.IRepository\Camefor.IRepository.csproj" />
+  </ItemGroup>
+
+</Project>
