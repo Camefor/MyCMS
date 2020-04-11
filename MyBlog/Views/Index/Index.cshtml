@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="site-heading">
-                    <h1>栩栩的个人网站</h1>
+                    <h2>栩宇的个人网站</h2>
                     <span class="subheading">好好写代码，一切都会来的。</span>
                 </div>
             </div>
@@ -25,19 +25,19 @@
             @foreach (var item in Model) {
                 <div class="post-preview">
                     <a asp-area="" asp-controller="Post" asp-action="v" asp-route-id="@item.ArticleId">
-                        <h2 class="post-title">
+                        <h5 class="post-title">
                             @item.ArticleTitle
-                        </h2>
-                        <h3 class="post-subtitle">
+                        </h5>
+                        <h6 class="post-subtitle">
                             @*一篇文章的子标题 内容概要*@
 
                             @item.ArticleSubTitle
-                        </h3>
+                        </h6>
                     </a>
                     <p class="post-meta">
                         Posted by
-                        <a href="#">@*栩栩 小白*@@item.UserId</a>
-                        on 4 08, 2020
+                        <a href="#">栩宇小白</a>
+                        on 2020-04-08
                     </p>
                 </div>
                 <hr>

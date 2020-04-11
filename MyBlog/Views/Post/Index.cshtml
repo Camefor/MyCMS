@@ -4,17 +4,17 @@
 }
 
 <!-- Page Header -->
-<header class="masthead" style="background-image: url('~/img/post-bg.jpg')">
+<header class="masthead" style="background-image: url('https://lsdlhlx.top/wp-json/sakura/v1/image/cover')">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="post-heading">
                     <h1>@Model.ArticleTitle</h1>
-                    <h2 class="subheading"> @Model.ArticleContent.Substring(0, Model.ArticleContent.Length / 50);</h2>
+                    <h2 class="subheading">@Model.ArticleSubTitle</h2>
                     <span class="meta">
                         Posted by
-                        <a href="#">栩栩 小白</a>
+                        <a href="#">栩宇小白</a>
                         on 4 08, 2020
                     </span>
                 </div>
@@ -26,7 +26,7 @@
 <article>
     <div class="container">
         <div class="row">
-            @Model.ArticleContent
+            @Html.Raw(Model.ArticleContent)
         </div>
     </div>
 </article>
